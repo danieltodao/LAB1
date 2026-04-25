@@ -44,11 +44,15 @@ public class TarefaController {
         newTask.setStatus(task.status());
         Task savedTask = taskRepository.save(newTask);
         return new TarefaReponseDTO(savedTask);
+
+
+
+
+
     }
 
     @GetMapping("/HEALTH")
     public String getStatus() {
-        return "OK";
+        return "ok";
     }
-    erro proposital adicionado para desafio atividade
 }
